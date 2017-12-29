@@ -4,9 +4,11 @@ import time
 from termcolor import colored, cprint
 
 
+# Version tracking.
 def version_tracking(v_number):
    cprint("Hi there! Your copy of ADMS is currently on %s"%(v_number), 'magenta')
 version_tracking("v1.0")
+
 
 # A short introduction to the script.
 cprint("Welcome to Alex's Dictionary Management System!", 'blue')
@@ -14,11 +16,11 @@ cprint("-----------------------------------------------", 'blue')
 cprint("FAQ:", 'blue')
 cprint("----", 'blue')
 cprint("What can this script do?", 'blue')
-print("ADMS lets the user manipulate objects from the script's dictionary")
+print("ADMS lets the user manipulate objects from the script's dictionary.")
 cprint("What can't this script do?", 'blue')
-print("As of v1.0, the script does not allow users to create their own dictionaries")
+print("As of v1.0, the script does not allow users to create their own dictionaries.")
 cprint("What's the point of this script?!", 'blue')
-print("Over the holidays, I wanted to prove to my Soft-dev teacher that Python was a viable language to teach. \n")
+print("Over the holidays, I wanted to prove to my colleague that Python was a viable language to teach. \n")
 
 
 # Creating and printing the user's original dictionary.
