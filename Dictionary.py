@@ -7,7 +7,7 @@ from termcolor import colored, cprint
 # Version tracking.
 def version_tracking(v_number):
    cprint("Hi there! Your copy of ADMS is currently on %s"%(v_number), 'magenta')
-version_tracking("v1.2")
+version_tracking("v1.3")
 
 
 # A short introduction to the script.
@@ -71,7 +71,7 @@ while True:
 
 
 # Adding a user.
-    if usr_choice == "2":    
+    elif usr_choice == "2":    
         add_usr_input = input('Please add a user to {name}: '.format(name = usr_dict_name))
 
         usr_dict[add_usr_input] = 4
@@ -83,7 +83,7 @@ while True:
 
 
 # Prints the user's changed dictionary.
-    if usr_choice == "3":
+    elif usr_choice == "3":
         outro_msg = colored('was updated successfully: \n', 'yellow', attrs=['bold'])
         print(usr_dict_name, outro_msg)
 
@@ -93,9 +93,15 @@ while True:
 
 
 # Existing the script.
-    if usr_choice == "4":
+    elif usr_choice == "4":
         print("Thank you for using ADMS. If you enjoyed the script, support free software like it. Everyone will benefit from it! =)")
         print("- Alex Smith")
         time.sleep(1)
         quit()
+
+
+# Invalid input for user error.
+    else:
+        usr_error = colored("Invalid input! '{choice}' is not an option listed above. Please reread the prompt and try again.".format(choice = usr_choice), 'red', attrs=['bold'])
+        print(usr_error)
 
