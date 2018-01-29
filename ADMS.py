@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Imports.
 import time
 from termcolor import colored, cprint
@@ -14,15 +15,9 @@ version_tracking("v2.0")
 # A short introduction to the script.
 cprint("Welcome to Alex's Dictionary Management System!", 'blue')
 cprint("-----------------------------------------------", 'blue')
-cprint("FAQ:", 'blue')
-cprint("----", 'blue')
-cprint("What can this script do?", 'blue')
-print("ADMS lets the user create and manipulate their very own dictionary.")
-cprint("What can't this script do?", 'blue')
-print("v2.0 fixed and added most of the features I wanted, so I guess the script does everything?")
-print("I don't know, play around with it until you break something.")
-cprint("What's the point of this script?!", 'blue')
-print("I wanted to prove to my colleague that Python was a viable language to teach. \n")
+cprint('Description:', 'blue')
+cprint('------------', 'blue')
+cprint('Allows users to create, save, load and manage Python based dictionaries. \n', 'magenta')
 
 # True or false messages that inform the user of changes they've made to their dictionary.
 msgs = {
