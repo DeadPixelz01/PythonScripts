@@ -19,7 +19,7 @@ cprint("Fahrenheit to Celsius", 'blue')
 cprint('---------------------', 'blue')
 cprint('Description:', 'blue')
 cprint('------------', 'blue')
-cprint('Converts Fahrenheit to Celsius (or vice versa) \n', 'magenta')
+cprint('Converts Fahrenheit to Celsius (or vice versa). \n', 'magenta')
 
 # User input.
 while True:
